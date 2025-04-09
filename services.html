@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="script.css" rel="stylesheet">
+    <title>Our Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      height: 100%;
+      background: linear-gradient(to bottom, #ffffff, #fdda2c4b);
+      overflow-x: hidden;
+    }
+/* Service Text Section */
+.service-text {
+      text-align: center;
+      padding: 20px;
+      margin-top: 70px;
+    }
+
+    .service-text h3 {
+      font-size: 20px;
+      color: #333;
+    }
+
+    .service-text h2 {
+      font-size: 24px;
+      margin: 2px;
+      font-weight: 700;
+    }
+
+    .service-text p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #555;
+      font-size: 16px;
+    }
+
+    .services-section {
+      padding: 20px;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .service-card {
+  display: flex;
+  flex-direction:row;
+  align-items: center; 
+  background: #292929;
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.service-card2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card1 {
+  margin-left: auto;
+}
+
+.service-card0 {
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.service-card0 img {
+  width: 50px;
+  height: auto;
+}
+.service-card1 a {
+  margin-top: 0;
+}
+.service-card2 {
+  flex: 1;
+}
+  .service-card1 {
+   align-self:flex-end;
+   margin-top: auto;
+  }
+ .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    
+
+    .service-card a { 
+      background: #fff;
+      color: #000;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .sarr{
+  background: #1e1e1e;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+  padding: 0;
+  gap: 8px;
+    }
+
+    .service-card a:hover {
+      background: #e0dd80;
+      color: #000;
+    }
+    .sarr:hover {
+      background: #6e6e6d;
+      color: #000;
+    }
+
+    .reach-bt {
+      text-align: right;
+      margin: 10px;
+      padding-right: 150px;
+    }
+
+    .reach-bt a {
+      background: #111;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .reach-bt a:hover {
+      background: #ffc517be;
+    }
+
+    .reach-bt img {
+      width: 20px;
+    }
+  
+
+/* Responsive Media Queries*/
+
+@media (max-width: 952px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .service-card0 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .service-card1 {
+    justify-content: center;
+    
+  }
+ 
+  .service-card a {
+    justify-content: center;
+  }
+  .reach-bt {
+      text-align:center;
+      padding:0;
+}
+
+
+
+}
+
+
+</style>
+
+<body>
+    <!--nav content-->
+    <nav>
+      <input type="checkbox"id="check">
+      <label for="check"class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">DHRS</label>
+      <ul>
+        <li><a class="a1"class="active"href="index.html">Home</a></li>
+        <li><a class="a1"href="about.html" >About Us</a></li>
+        <li><a class="a1"href="services.html" >Services</a></li>
+        <li><a class="a1"href="contact.html" >Reach Us</a></li>
+      </ul>
+    </nav>
+
+  <!-- Service Text -->
+  <section class="service-text">
+    <h3>Our Services</h3>
+    <h2>Why You Need Deserve HR Solutions' Support</h2>
+    <p>
+      At Deserve HR Solutions, we collaborate closely with you to understand your unique organizational needs,
+      design a tailored HR strategy, implement effective HR solutions, and provide ongoing support to ensure
+      your workforce thrives. Here’s how we can help:
+    </p>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="services-section">
+    <div class="services-container">
+      <div class="service-card">
+      <div class="service-card0">
+        <img src="Recruitment.png" alt="Recruitment" />
+      </div>
+      <div class="service-card2">
+        <h3>Recruitment</h3>
+        <p>Find and hire top talent effortlessly</p>
+        <div class="service-card1">
+        <a href="#service">learn more <span class="sarr">&#8594;</span></a>
+      </div>
+      </div>
+    </div>
+
+      <div class="service-card">
+        <div class="service-card0">
+        <img src="payroll1.png" alt="Payroll" />
+      </div>
+        <div class="service-card2">
+        <h3>Payroll</h3>
+        <p>Payroll processing and compliance</p>
+
+        <div class="service-card1">
+        <a href="#service">learn more <span class="sarr" >&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+
+      <div class="service-card">
+        <div class="service-card0">
+        <img src="onboarding.png" alt="Onboarding" />
+      </div>
+        <div class="service-card2">
+        <h3>Onboarding</h3>
+        <p>Smooth transition for new hires</p>
+      
+        <div class="service-card1">
+        <a href="#service">learn more <span class="sarr">&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+
+      <div class="service-card">
+        <div class="service-card0">
+        <img src="employee-exit.png" alt="Exit" />
+      </div>
+        <div class="service-card2">
+        <h3>Exit</h3>
+        <p>Professional and hassle-free exit</p>
+      
+        <div class="service-card1">
+        <a href="#service">learn more <span class="sarr">&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+      <div class="service-card">
+        <div class="service-card0">
+        <img src="Compliance.png" alt="Compliance" />
+      </div>
+        <div class="service-card2">
+        <h3>Compliance</h3>
+        <p>Stay legally compliant with HR regulations</p>
+      
+        <div class="service-card1">
+        <a href="#service">learn more <span class="sarr">&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+      <div class="service-card">
+        <div class="service-card0">
+        <img src="queries.png" alt="T&A" />
+      </div>
+        <div class="service-card2">
+        <h3>T&amp;A</h3>
+        <p>Get expert guidance on professional tax</p>
+      
+        <div class="service-card1">
+        <a href="#service">learn more <span class="sarr">&#8594;</span></a>
+      </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Reach Button -->
+  <div class="reach-bt">
+    <a href="contact.html" target="_blank">Reach Us <img src="reachus.png" alt="Reach Icon"/></a>
+  </div>
+
+</body>
+</html>

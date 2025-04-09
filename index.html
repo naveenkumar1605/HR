@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="script.css" rel="stylesheet">
+    <title>Deserve HR Solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<style>
+  *{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family:poppins;
+    background:  #e7f0fc; 
+    margin: 0;
+  }
+  nav{
+    border-radius: 7px;
+    background: rgb(254, 254, 254);
+    height:80px;
+    width:100%;
+    position: fixed;
+  }
+  label.logo{
+    color:rgb(73, 112, 166);
+    font-size:35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight:bold;
+  }
+  nav ul{
+   float: right;
+   margin-right:20px;
+  }
+  nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin: 0 5px;
+  }
+  nav ul li .a1{
+    color:rgb(96, 127, 158);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: all 1s;
+  }
+  .a1.active,.a1:hover{
+    text-shadow:2px 2px 5px rgb(153, 153, 213) ;
+    color: rgba(150, 169, 224, 0.999);
+    font-size: 18px;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float:right; 
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  #check{
+    display:none;
+  }
+
+ /*Left content*/
+ 
+ .main-container2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 100px;
+      height: 100vh;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+    }
+
+    .left-content {
+      width: 50%;
+      padding-top: 50px;
+    }
+
+    .he1 {
+      color: #163452;
+      font-size: 60px;
+      padding-bottom: 20px;
+      margin: 0;
+    }
+    
+    
+
+    .he2 {
+      color: #163452;
+      width: 400px;
+      font-size: x-large;
+      line-height: 2;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .but1 {
+      background-color: #0c1e31;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+
+    .but2 {
+      display: none;
+    }
+
+    .b1 {
+      color: #ffffff;
+      text-decoration: none;
+      transition: all 1s;
+    }
+
+    .b1:hover {
+      font-size: 18px;
+    }
+
+    .ser1 {
+      font-style: italic;
+      color: #163452;
+    }
+
+    .ser2, .but4,.but3 {
+      display: none;
+    }
+
+    .arr {
+      font-size: 60px;
+      background-color: #ffffff;
+      border-radius: 90px;
+      padding: 3px 6px;
+      font-weight: bolder;
+      text-shadow: 2px 2px 5px rgb(153, 153, 213);
+    }
+
+    .b2 {
+      color: #0c1e31;
+      background-color: #ffffff;
+      padding: 5px 5px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 1s;
+    }
+
+    .b2:hover {
+      text-shadow: 2px 2px 5px rgb(17, 17, 100);
+    }
+
+    .right-content {
+      width: 50%;
+      text-align: right;
+      padding-top: 50px;
+    }
+
+    .img1 {
+      width: 540px;
+      border-radius: 30px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .img2, .img3 {
+      width: 260px;
+      border-radius: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 952px) {
+      .main-container2 {
+        flex-direction: column;
+        padding: 30px 20px;
+        height: auto;
+        align-items: center;
+        text-align: center;
+      }
+
+      .left-content, .right-content {
+        width: 100%;
+        text-align: center;
+      }
+
+      .he1 {
+        font-size: 32px;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 5px;
+      }
+
+      .he2 {
+        width: 100%;
+        font-size: medium;
+        line-height: 1.6;
+        margin-bottom: 5px;
+      }
+
+      .buttons {
+        display: none;
+      }
+
+      .buttons1 {
+        margin: 0 auto;
+        padding: 10px;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        display: flex;
+      }
+
+      .but3, .but4 {
+        background-color: #0c1e31;
+        border-radius: 20px;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+
+      .b4, .b5 {
+        color: #ffffff;
+        text-decoration: none;
+        transition: all 1s;
+      }
+
+      .b4:hover, .b5:hover {
+        font-size: 15px;
+      }
+
+      .img1 {
+        width: 100%;
+        max-width: 320px;
+        border-radius: 20px;
+        margin: 0 auto;
+      }
+
+      .image-row {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 5px;
+      }
+
+      .img2, .img3 {
+        width: 45%;
+        max-width: 135px;
+        border-radius: 20px;
+      }
+    }
+  
+
+
+/*FIRST*/
+  @media(max-width:952px){
+
+    nav{
+    border-radius: 7px;
+    background: rgb(254, 254, 254);
+    height:80px;
+    width:100%;
+    position: fixed;
+    border-bottom: 2px solid rgb(78, 99, 139); 
+    border-radius: 0 0 7px 7px;
+  }
+    .checkbtn{
+    font-size: 30px;
+    color: rgb(78, 99, 139);
+    float:right;
+    line-height: 80px;
+    margin-right: 60px;
+    cursor: pointer;
+  }
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position:fixed;
+      width: 100%;
+      height: 100vh;
+      background: #a2b6cb;
+      top: 80px;
+      left:-100%;
+      text-align: center;
+      transition: all 1s ease;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li.a1{
+      font-size: 20px; 
+    }
+    .a1:hover,.a1.active{
+      background: none;
+      color: rgb(24, 42, 63);
+      text-shadow: 2px 2px 10px rgb(109, 119, 136); 
+    }
+   #check:checked~ul{
+    left: 0;
+   }
+   label.logo{
+    padding-left: 40px;
+   }
+   
+  }
+
+
+ 
+  
+</style>
+<body>
+  <!--nav content-->
+  <nav>
+    <input type="checkbox"id="check">
+    <label for="check"class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">DHRS</label>
+    <ul>
+      <li><a class="a1"class="active"href="index.html">Home</a></li>
+      <li><a class="a1"href="about.html" >About Us</a></li>
+      <li><a class="a1"href="services.html" >Services</a></li>
+      <li><a class="a1"href="contact.html" >Reach Us</a></li>
+    </ul>
+  </nav>
+  
+   <!--left content-->
+   <div class="main-container2">
+    <div class="left-content">
+      <div class="he1"><b>Unlock the power of Human Resources</b></div>
+      <div class="he2">Empower your business with the right people and the right tools for growth!</div>
+    <!--buttons-->
+      <div class="buttons">
+        <div class="but1"><a class="b1" href="contact.html" target="_blank">ReachUs</a></div>
+        <div class="ser1">Our valuable services <a class="b2" href="services.html">&#8594;</a></div>
+      </div>
+    </div>
+     <!--right content-->
+    <div class="right-content">
+      <img class="img1" src="f5.jpg">
+      <div class="image-row">
+        <img class="img2" src="f6.jpg">
+        <img class="img3" src="f1.jpg">
+      </div>
+    </div>
+
+    <DIV CLASS="buttons1">
+      <div class="but3"><a class="b4" href="contact.html" target="_blank">ReachUs</a></div>
+      <div class="but4"> <a class="b5" href="services.html" target="_blank">Services</a></div>
+    </DIV>
+
+  </div>
+  
+  
+  
+  
+
+
+</body>
+</html>

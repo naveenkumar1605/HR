@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="script.css" rel="stylesheet">
+    <title>Contact US</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      height: 100%;
+      background: white;
+      overflow-x: hidden;
+    }
+
+    .main1 {
+  width: 80%; 
+  max-width: 1200px; 
+  margin: 90px auto 0; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+    .leftside, .rightside {
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .firstbox, .secondbox {
+      background-color: #f5f5f5;
+      border-radius: 20px;
+      padding: 30px;
+      transition: all 0.5s;
+    }
+     .firstbox:hover,.secondbox:hover{
+        box-shadow:0 0 10px rgb(85, 115, 164) ;
+     }
+     .rightside form:hover{
+        box-shadow:0 0 10px rgb(85, 115, 164) ;
+     }
+    .firstbox h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .firstbox p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .sb1 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .sb1 img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+      background-color: #fff;
+      border-radius:10px ;
+      padding: 10px;
+      
+
+    }
+
+    .sb1 h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+    
+    .sb1 a,
+    .sb1 span {
+      font-size: 14px;
+      color: #000;
+      text-decoration: none;
+    }
+   .sb1 a:hover{
+    color: rgb(33, 90, 141);
+   }
+   .sb1 a {
+    transition: all 0.5s;
+   } 
+   
+   .rightside form {
+      background-color: #f5f5f5;
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.5s;
+    }
+
+    .rightside label {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .rightside input,
+    .rightside textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 15px;
+      border: none;
+      background-color: white;
+      font-size: 14px;
+    }
+
+    .rightside textarea {
+      resize: vertical;
+      height: 100px;
+    }
+   #info {
+  width: 100%; 
+  height: 150px; 
+  resize: none; 
+  overflow-y: auto; 
+  box-sizing: border-box; 
+  padding: 7px;  
+  border-radius: 15px; 
+}
+
+
+
+    .send1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.b2 {
+  background: #1e1e1e;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  gap: 8px;
+  margin-top: 10px;
+}
+.b2:hover{
+ background:  rgb(109, 103, 103);
+}
+/* show the arrow */
+.arrow {
+  flex-shrink: 0;
+}
+
+/* Hide the "send"  */
+.send-text {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  margin-left: 5px;
+  display: none;
+}
+
+/* expand  "send" */
+.b2:focus-within {
+  width: 120px;
+  border-radius: 20px;
+  padding: 0 10px;
+  justify-content: start;
+  background-color: rgb(35, 80, 135);
+}
+
+.b2:focus-within .send-text {
+  display: inline;
+  opacity: 1;
+}
+
+
+/* Responsive Media Queries*/
+
+@media (max-width: 952px) {
+  .container {
+    padding: 0 10px; /* Reduce side padding on smaller screens */
+  }
+
+  #info {
+    width: 100%; /* Full width within its container */
+    height: 150px; /* Maintain the height */
+  }
+
+  /* Adjust other elements as needed */
+  .leftside,
+  .rightside {
+    width: 100%;
+  }
+
+  .firstbox,
+  .secondbox,
+  form {
+    padding: 20px;
+  }
+
+  .sb1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sb1 img {
+    margin-bottom: 5px;
+  }
+
+  .sb1 a {
+    display: block;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+</style>
+
+
+<body>
+<!--nav content-->
+    <nav>
+      <input type="checkbox"id="check">
+      <label for="check"class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">DHRS</label>
+      <ul>
+        <li><a class="a1"class="active"href="index.html">Home</a></li>
+      <li><a class="a1"href="about.html" >About Us</a></li>
+      <li><a class="a1"href="services.html" >Services</a></li>
+      <li><a class="a1"href="contact.html" >Reach Us</a></li>
+      </ul>
+    </nav>
+<!-- Left and Right sections -->
+<div class="main1">
+    <!-- Left Side -->
+    <div class="leftside">
+      <!-- First Box -->
+      <div class="firstbox">
+        <h2>Contact Us</h2>
+        <p>We operate digitally, eliminating the need for offline offices and 
+          minimizing unnecessary expenses, allowing us to offer cost-effective and 
+          efficient HR consultancy services.</p>
+      </div>
+  
+      <!-- Second Box -->
+      <div class="secondbox">
+        <div class="sb1">
+          <img src="email.png">
+          <a href="mailto:contact@deservehrsolutions.com">
+            <h2>Email</h2>
+            contact@deservehrsolutions.com
+          </a>
+        </div>
+        <div class="sb1">
+          <img src="phone1.png">
+          <a href="tel:+918899776655">
+            <h2>Phone</h2>
+            8899776655
+          </a>
+        </div>
+        <div class="sb1">
+          <img src="loc.png">
+          <a href="#">
+            <h2>Location</h2>
+            Chennai, Tamilnadu, India
+          </a>
+        </div>
+        <div class="sb1">
+          <img src="linked.png">
+          <a href="#">
+            <h2>LinkedIn</h2>
+            Linked In
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Right Side -->
+    <div class="rightside">
+      <form>
+        <label for="company">Company Name</label>
+        <input type="text" id="company" name="company" placeholder="Enter company name">
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email address">
+  
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number">
+  
+        <label for="info">Further Info</label>
+        <textarea id="info" name="info" rows="5" placeholder="Write something..."></textarea>
+  
+        <div class="send1">
+          <a class="b2" href="#service">
+            <span class="send-text">send</span>
+            <span class="arrow">&#8594;</span>
+          </a>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  
+  </body>
+  </html>
+  
+  
